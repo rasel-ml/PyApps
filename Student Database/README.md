@@ -33,6 +33,8 @@ This program is written in pure Python and **does not require any third-party li
 python Student_Database.py
 ```
 
+### 📸 Screenshot
+<img src="https://github.com/rasel-ml/rasel-ml/blob/main/Screenshots/SIS_ss.png" alt="Screenshot" width="100%"></img>
 
 ### 🛠️ Function Overview
 
