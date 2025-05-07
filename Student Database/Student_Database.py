@@ -5,7 +5,7 @@ def loadDatabase():
     '''
     global students
     try:
-        with open("database.txt", 'r') as file:
+        with open("Database.txt", 'r') as file:
             lines = file.readlines()
             for line in lines:
                 line = line.strip()  # Remove any leading/trailing whitespace
@@ -19,14 +19,14 @@ def loadDatabase():
                 student = {'id': info[0], 'name': info[1], 'dept': info[2]}
                 students.append(student)
     except FileNotFoundError:
-        with open("database.txt", "w") as file:
+        with open("Database.txt", "w") as file:
             pass
             
 def updateDatabase():
     '''
         This function updates the database file whenever any changes are made.
     '''
-    with open("database.txt", "w") as file:
+    with open("Database.txt", "w") as file:
         for student in students:
             file.write(f"{student['id']},{student['name']},{student['dept']}\n")
 
@@ -34,7 +34,7 @@ def Main():
     '''
         This is the main function which takes commands from the user and executes them by calling the appropriate functions.
     '''
-    print("Welcome to the Student Information System. Please choose an option from the menu below.")
+    print("Welcome to the Student Information System (SIS). Please choose an option from the menu below.")
     while (True):
         print("\nMain menu:\n──────────\n1. Add a New Student\n2. View All Students\n3. Search for a Student\n4. Edit a Student Profile\n5. Delete a Student Profile\n6. Exit")
         choice = input("\nEnter your choice: ").strip()
