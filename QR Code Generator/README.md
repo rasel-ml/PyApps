@@ -43,7 +43,7 @@ python QR_Code_Generator.py
 - 💾 Saves the QR code as a PNG file
 
 - 🧪 Optional: preview it in your terminal if termimage is installed
-- 
+
 ### Screenshots 📸
 <img src="https://github.com/rasel-ml/rasel-ml/blob/main/Screenshots/qr_ss1.png" alt="Screenshot1" width="100%"></img>
 <br/><br/>
